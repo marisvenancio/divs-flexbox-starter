@@ -103,9 +103,22 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-family: 'Lora', sans-serif;
+  font-weight: normal;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+}
+
+header,
+main,
+footer {
+    display: flex;
+}
+
+main {
+    border-bottom: solid white 1px;
 }
 
 .wrapper {
@@ -113,9 +126,6 @@ body {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-  padding: 1em 0;
-  border-top: solid white 0.1px;
-  border-bottom: solid white 0.1px;
 }
 
 .div-1, .div-2, .div-3 {
@@ -128,7 +138,7 @@ body {
   display: flex;
   width: 30%;
   height: auto;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -138,6 +148,23 @@ body {
     border-left: solid white 1px;
 }
 
+footer {
+    border-top: solid white 1px;
+    flex: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding-right: 1em;
+}
 
 
 
